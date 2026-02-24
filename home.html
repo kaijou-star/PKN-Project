@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kearifan Lokal | Proyek PKN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-heritage { font-family: 'Playfair Display', serif; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .bg-batik {
+            background-image: url('https://www.transparenttextures.com/patterns/batik-fractal.png');
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter text-indigo-700">
+                LOKAL<span class="text-orange-500">PRIDE.</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-semibold text-sm uppercase tracking-widest">
+                <a href="#home" class="hover:text-indigo-600 transition">Beranda</a>
+                <a href="#materi" class="hover:text-indigo-600 transition">Materi</a>
+                <a href="#galeri" class="hover:text-indigo-600 transition">Budaya</a>
+                <a href="#tim" class="hover:text-indigo-600 transition">Kelompok</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1590059393012-78d10787e35b?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" alt="Budaya Indonesia">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+        
+        <div class="relative z-10 text-center px-6" data-aos="zoom-out" data-aos-duration="1500">
+            <span class="bg-orange-500/20 text-orange-400 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-widest border border-orange-500/30">Tugas PKN Kelompok Kita</span>
+            <h1 class="font-heritage text-5xl md:text-8xl text-white mt-6 mb-4">Kearifan Lokal</h1>
+            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                Menelusuri jejak luhur nenek moyang dalam menjaga harmoni antara manusia, alam, dan Sang Pencipta.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#materi" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-xl shadow-indigo-500/20">Mulai Jelajah</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="materi" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-extrabold mb-4">Mengenal Lebih Dekat</h2>
+            <div class="h-1.5 w-20 bg-indigo-600 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="group bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                <div class="absolute -right-4 -top-4 w-24 h-24 bg-indigo-50 rounded-full group-hover:scale-[5] transition-transform duration-700 z-0"></div>
+                <div class="relative z-10">
+                    <div class="text-4xl mb-6">🏛️</div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-indigo-700 transition">Nilai Luhur</h3>
+                    <p class="text-slate-500 leading-relaxed">Prinsip gotong royong dan musyawarah yang menjadi pondasi kehidupan masyarakat Indonesia.</p>
+                </div>
+            </div>
+
+            <div class="group bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <div class="absolute -right-4 -top-4 w-24 h-24 bg-orange-50 rounded-full group-hover:scale-[5] transition-transform duration-700 z-0"></div>
+                <div class="relative z-10">
+                    <div class="text-4xl mb-6">🌿</div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-orange-700 transition">Tradisi Alam</h3>
+                    <p class="text-slate-500 leading-relaxed">Bagaimana masyarakat adat menjaga hutan dan laut melalui hukum adat yang bijaksana.</p>
+                </div>
+            </div>
+
+            <div class="group bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                <div class="absolute -right-4 -top-4 w-24 h-24 bg-teal-50 rounded-full group-hover:scale-[5] transition-transform duration-700 z-0"></div>
+                <div class="relative z-10">
+                    <div class="text-4xl mb-6">🎭</div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-teal-700 transition">Seni & Budaya</h3>
+                    <p class="text-slate-500 leading-relaxed">Ekspresi identitas bangsa melalui tari, musik, dan kerajinan tangan yang mendunia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="py-24 bg-slate-100 bg-batik">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-right">
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-4">Pesona Budaya</h2>
+                    <p class="text-slate-600">Keanekaragaman yang membuat Indonesia unik.</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="h-64 rounded-3xl overflow-hidden shadow-lg group" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1544919982-b61976f0ba43?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="h-64 rounded-3xl overflow-hidden shadow-lg group md:mt-12" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="h-64 rounded-3xl overflow-hidden shadow-lg group" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="h-64 rounded-3xl overflow-hidden shadow-lg group md:mt-12" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1605335134701-d77918f77a83?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tim" class="py-24 max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-extrabold mb-12" data-aos="fade-up">Kelompok Hebat Kami</h2>
+        <div class="flex flex-wrap justify-center gap-12">
+            <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-24 h-24 bg-indigo-100 rounded-full mb-4 flex items-center justify-center text-3xl font-bold text-indigo-600 border-2 border-indigo-500">A</div>
+                <p class="font-bold text-lg">Anggota 1</p>
+                <p class="text-indigo-500 text-sm">Ketua Kelompok</p>
+            </div>
+            <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-24 h-24 bg-orange-100 rounded-full mb-4 flex items-center justify-center text-3xl font-bold text-orange-600 border-2 border-orange-500">B</div>
+                <p class="font-bold text-lg">Anggota 2</p>
+                <p class="text-orange-500 text-sm">Penyusun Materi</p>
+            </div>
+            <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-24 h-24 bg-teal-100 rounded-full mb-4 flex items-center justify-center text-3xl font-bold text-teal-600 border-2 border-teal-500">C</div>
+                <p class="font-bold text-lg">Anggota 3</p>
+                <p class="text-teal-500 text-sm">Desainer Web</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-12 text-center border-t border-slate-800">
+        <p class="text-slate-500 mb-2">Proyek Tugas Akhir PKN - 2026</p>
+        <p class="font-bold tracking-widest text-sm text-indigo-400">DIBUAT DENGAN SEMANGAT KEARIFAN LOKAL</p>
+    </footer>
+
+    <script>
+        // Inisialisasi AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out',
+        });
+
+        // Efek Navbar saat scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-xl');
+            } else {
+                nav.classList.remove('py-2', 'shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>

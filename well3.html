@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kearifan Lokal | Kelompok 6 X RPL 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { heritage: '#4F46E5', saphire: '#0f172a' },
+                    animation: { 'bounce-slow': 'bounce 3s infinite' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .font-heritage { font-family: 'Playfair Display', serif; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); }
+        .dark .glass { background: rgba(15, 23, 42, 0.75); }
+        .hero-gradient { background: linear-gradient(to bottom, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 0.9) 100%); }
+        .card-hover:hover { transform: translateY(-10px) scale(1.02); }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 overflow-x-hidden">
+
+    <nav class="fixed w-full z-[100] glass border-b border-slate-200/50 dark:border-slate-800/50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="group cursor-pointer">
+                <div class="text-2xl font-extrabold tracking-tighter text-indigo-600 dark:text-indigo-400 group-hover:scale-105 transition-transform">
+                    RPL<span class="text-orange-500">PROJECT.</span>
+                </div>
+                <div class="text-[10px] font-bold tracking-[0.2em] dark:text-slate-500 text-slate-400">KELOMPOK 6 • X RPL 2</div>
+            </div>
+            <div class="hidden md:flex gap-8 font-bold text-[11px] uppercase tracking-widest items-center">
+                <a href="#home" class="hover:text-indigo-600 transition-colors">Home</a>
+                <a href="#materi" class="hover:text-indigo-600 transition-colors">Materi</a>
+                <a href="#tim" class="hover:text-indigo-600 transition-colors">Team</a>
+                <button onclick="toggleDarkMode()" class="ml-4 p-2.5 bg-indigo-50 dark:bg-slate-800 rounded-xl hover:shadow-lg transition-all">
+                    <span id="darkIcon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="CANDI-PRAMBANAN.jpg" class="w-full h-full object-cover scale-110" id="heroImg">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 mt-20" data-aos="fade-up" data-aos-duration="1500">
+            <span class="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white text-xs font-bold tracking-[0.3em] uppercase mb-6 inline-block">Proyek Kewarganegaraan</span>
+            <h1 class="font-heritage text-6xl md:text-[10rem] text-white mb-4 leading-none select-none">Kearifan<br><span class="text-orange-500">Lokal</span></h1>
+            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light tracking-wide">
+                Menggali nilai luhur bangsa Indonesia sebagai tameng budaya di era digital.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-5">
+                <a href="#materi" class="bg-indigo-600 text-white px-10 py-4 rounded-2xl font-extrabold hover:bg-indigo-500 transition-all shadow-2xl shadow-indigo-600/40 transform hover:-translate-y-1">Eksplorasi Materi</a>
+            </div>
+            <div class="mt-20 animate-bounce-slow">
+                <div class="w-1 h-12 bg-gradient-to-b from-orange-500 to-transparent mx-auto rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="materi" class="py-32 max-w-6xl mx-auto px-6">
+        
+        <div class="grid md:grid-cols-2 gap-20 items-center mb-40">
+            <div data-aos="fade-right">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="h-px w-12 bg-indigo-600"></div>
+                    <span class="text-indigo-600 font-black tracking-widest text-xs uppercase">01 / Definisi Dasar</span>
+                </div>
+                <h2 class="text-5xl font-extrabold mb-8 dark:text-white">Apa itu Kearifan Lokal?</h2>
+                <div class="space-y-6 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                    <p>
+                        Kearifan lokal (Local Wisdom) adalah suatu bentuk pengetahuan, keyakinan, pemahaman, atau wawasan serta adat kebiasaan atau etika yang menuntun perilaku manusia dalam kehidupan di dalam komunitas ekologis.
+                    </p>
+                    <p class="border-l-4 border-orange-500 pl-6 italic">
+                        Secara etimologis, kearifan lokal terdiri dari dua kata: <strong class="text-slate-800 dark:text-white">kearifan</strong> (kebijaksanaan) dan <strong class="text-slate-800 dark:text-white">lokal</strong> (setempat). Jadi, ia merupakan gagasan setempat yang bersifat bijaksana dan bernilai baik.
+                    </p>
+                </div>
+            </div>
+            <div class="relative" data-aos="zoom-in">
+                <div class="absolute -inset-4 bg-indigo-500/20 rounded-[4rem] blur-2xl"></div>
+                <div class="relative bg-white dark:bg-slate-800 p-10 rounded-[3rem] shadow-2xl border border-slate-100 dark:border-slate-700">
+                    <p class="text-indigo-600 dark:text-indigo-400 font-serif italic text-2xl leading-snug">
+                        "Kearifan lokal bukan sekadar tradisi usang, melainkan kecerdasan kolektif suatu bangsa dalam menghadapi tantangan zaman."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-40">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-extrabold mb-4">Mengapa Ia Muncul?</h2>
+                <p class="text-slate-500 uppercase tracking-[0.2em] text-xs">Akar sejarah dan sosiologis</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group p-10 bg-white dark:bg-slate-800 rounded-[2.5rem] shadow-xl card-hover transition-all duration-500 border border-transparent hover:border-indigo-500/30" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-indigo-100 dark:bg-indigo-900/30 rounded-2xl flex items-center justify-center text-3xl mb-8">🌍</div>
+                    <h4 class="text-xl font-bold mb-4">Geografis & Iklim</h4>
+                    <p class="text-slate-500 text-sm leading-loose">Masyarakat dipaksa beradaptasi dengan kondisi alam yang ekstrem, menciptakan teknik bertahan hidup yang unik seperti bentuk rumah panggung.</p>
+                </div>
+                <div class="group p-10 bg-white dark:bg-slate-800 rounded-[2.5rem] shadow-xl card-hover transition-all duration-500 border border-transparent hover:border-orange-500/30" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-orange-100 dark:bg-orange-900/30 rounded-2xl flex items-center justify-center text-3xl mb-8">🤝</div>
+                    <h4 class="text-xl font-bold mb-4">Harmoni Sosial</h4>
+                    <p class="text-slate-500 text-sm leading-loose">Kebutuhan akan perdamaian kelompok memicu lahirnya norma musyawarah agar tidak terjadi konflik internal antar warga.</p>
+                </div>
+                <div class="group p-10 bg-white dark:bg-slate-800 rounded-[2.5rem] shadow-xl card-hover transition-all duration-500 border border-transparent hover:border-teal-500/30" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-teal-100 dark:bg-teal-900/30 rounded-2xl flex items-center justify-center text-3xl mb-8">✨</div>
+                    <h4 class="text-xl font-bold mb-4">Religiusitas</h4>
+                    <p class="text-slate-500 text-sm leading-loose">Keyakinan terhadap kekuatan alam dan Tuhan menciptakan ritual penghormatan yang menjaga kelestarian lingkungan.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-40" data-aos="fade-up">
+            <div class="flex flex-col md:flex-row gap-16">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-extrabold mb-10">Contoh Nyata di Indonesia</h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-indigo-600 rounded-3xl text-white shadow-xl transform transition hover:scale-105 cursor-default">
+                            <h4 class="font-black text-lg mb-2 uppercase">1. Subak (Bali)</h4>
+                            <p class="text-indigo-100 text-sm">Manajemen irigasi sawah yang adil dan demokratis, diakui UNESCO sebagai warisan dunia.</p>
+                        </div>
+                        <div class="p-6 bg-slate-800 dark:bg-slate-700 rounded-3xl text-white shadow-xl transform transition hover:scale-105 cursor-default">
+                            <h4 class="font-black text-lg mb-2 uppercase">2. Sasi (Maluku)</h4>
+                            <p class="text-slate-300 text-sm">Budaya melarang pengambilan hasil alam tertentu dalam waktu tertentu demi regenerasi ekosistem laut.</p>
+                        </div>
+                        <div class="p-6 bg-orange-500 rounded-3xl text-white shadow-xl transform transition hover:scale-105 cursor-default">
+                            <h4 class="font-black text-lg mb-2 uppercase">3. Nyabuk Gunung (Jateng)</h4>
+                            <p class="text-orange-100 text-sm">Cara bercocok tanam dengan membuat terasering melingkari gunung guna mencegah longsor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="sticky top-32 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white dark:border-slate-800 aspect-video">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 mb-40">
+            <div class="bg-slate-200 dark:bg-slate-800 rounded-[3rem] p-12" data-aos="fade-right">
+                <h2 class="text-3xl font-extrabold mb-8">Fungsi & Peran</h2>
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4 text-slate-600 dark:text-slate-400">
+                        <span class="text-indigo-500 font-bold text-xl">01.</span>
+                        <p>Sebagai <strong class="text-indigo-600">Konservasi</strong> dan pelestarian sumber daya alam yang berkelanjutan.</p>
+                    </li>
+                    <li class="flex items-start gap-4 text-slate-600 dark:text-slate-400">
+                        <span class="text-indigo-500 font-bold text-xl">02.</span>
+                        <p>Sebagai <strong class="text-indigo-600">Integrasi</strong> sosial yang mencegah konflik horizontal antar warga.</p>
+                    </li>
+                    <li class="flex items-start gap-4 text-slate-600 dark:text-slate-400">
+                        <span class="text-indigo-500 font-bold text-xl">03.</span>
+                        <p>Sebagai <strong class="text-indigo-600">Identitas</strong> yang membedakan satu suku bangsa dengan bangsa lainnya di kancah global.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col justify-center" data-aos="fade-left">
+                <h2 class="text-3xl font-extrabold mb-6">Manfaat Strategis</h2>
+                <p class="text-slate-500 leading-relaxed mb-6">
+                    Kearifan lokal membantu masyarakat mandiri secara ekonomi dan sosial tanpa harus bergantung sepenuhnya pada teknologi asing yang terkadang tidak cocok dengan kondisi lokal.
+                </p>
+                <div class="flex gap-4">
+                    <div class="px-6 py-3 bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 rounded-full text-xs font-bold uppercase tracking-widest">Sustainability</div>
+                    <div class="px-6 py-3 bg-orange-100 dark:bg-orange-900/40 text-orange-600 rounded-full text-xs font-bold uppercase tracking-widest">Identity</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10 mb-40">
+            <div class="p-12 bg-green-50 dark:bg-green-900/10 rounded-[4rem] border border-green-200 dark:border-green-900/30" data-aos="flip-left">
+                <h3 class="text-2xl font-black text-green-700 mb-6 flex items-center gap-3">
+                    <span>✅</span> Kelebihan
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-loose">
+                    Ramah lingkungan karena tidak merusak alam, memperkuat solidaritas komunitas, dan memiliki nilai sejarah yang sangat tinggi yang tidak bisa dibeli dengan uang.
+                </p>
+            </div>
+            <div class="p-12 bg-red-50 dark:bg-red-900/10 rounded-[4rem] border border-red-200 dark:border-red-900/30" data-aos="flip-right">
+                <h3 class="text-2xl font-black text-red-700 mb-6 flex items-center gap-3">
+                    <span>❌</span> Kekurangan
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-loose">
+                    Sulit diadaptasi ke dunia industri massal, seringkali bersifat tertutup (eksklusif), dan rentan ditinggalkan oleh generasi Z yang lebih suka budaya pop.
+                </p>
+            </div>
+        </div>
+
+        <div class="relative p-16 md:p-24 bg-indigo-600 rounded-[5rem] overflow-hidden shadow-2xl" data-aos="zoom-in">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+            <div class="relative z-10 text-center text-white">
+                <h2 class="text-4xl font-black mb-8 italic">Kesimpulan Akhir</h2>
+                <p class="max-w-4xl mx-auto text-indigo-100 leading-[2.5] text-xl font-light">
+                    Kearifan lokal adalah "DNA" bangsa Indonesia. Di tengah arus globalisasi, kearifan lokal bukan untuk memusuhi modernitas, melainkan untuk berjalan beriringan. Kita sebagai <span class="font-bold text-orange-400 underline decoration-2">Generasi RPL</span> harus bisa mendigitalisasi nilai-nilai ini agar tetap relevan di masa depan.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="tim" class="py-32 bg-slate-900 dark:bg-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-pattern"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-5xl font-black mb-4 text-white uppercase tracking-tighter">The Developers</h2>
+                <p class="text-indigo-400 font-bold uppercase tracking-widest text-xs">Kelompok 6 • X RPL 2</p>
+                <div class="h-1 bg-orange-500 w-32 mx-auto mt-6 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-10 md:gap-20">
+                <script>
+                    const members = [
+                        { name: "Cakra", role: "Anggota", img: "21", color: "indigo" },
+                        { name: "Rhaka", role: "Anggota", img: "22", color: "orange" },
+                        { name: "Sharon(i)", role: "Anggota", img: "23", color: "teal" },
+                        { name: "Sefi", role: "Anggota", img: "24", color: "rose" },
+                        { name: "Windi", role: "Anggota", img: "25", color: "yellow" },
+                        { name: "Hindri", role: "Anggota", img: "26", color: "purple" }
+                    ];
+
+                    members.forEach((m, i) => {
+                        document.write(`
+                            <div class="group text-center" data-aos="fade-up" data-aos-delay="${i*100}">
+                                <div class="relative inline-block mb-8">
+                                    <div class="absolute -inset-4 bg-${m.color}-600/30 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                                    <img src="https://i.pravatar.cc/300?img=${m.img}" class="relative w-32 h-32 md:w-44 md:h-44 rounded-full object-cover border-4 border-${m.color}-500 p-1.5 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 grayscale hover:grayscale-0 shadow-2xl shadow-black">
+                                </div>
+                                <h3 class="text-2xl font-black text-white mb-2">${m.name}</h3>
+                                <p class="text-indigo-400 font-bold text-[10px] uppercase tracking-[0.2em]">${m.role}</p>
+                            </div>
+                        `);
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-white py-16 px-6 text-center border-t border-white/5">
+        <div class="mb-8 flex justify-center gap-6">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-indigo-600 transition-all cursor-pointer">IG</div>
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-indigo-600 transition-all cursor-pointer">YT</div>
+        </div>
+        <p class="text-slate-500 text-xs mb-4 uppercase tracking-[0.4em]">Project Akhir PKN • 2026</p>
+        <div class="text-[10px] font-bold text-slate-700">HANDCRAFTED WITH ❤️ BY KELOMPOK 6 X RPL 2</div>
+    </footer>
+
+    <script>
+        // Init Animate On Scroll
+        AOS.init({ duration: 1000, once: true });
+
+        // Dark Mode Function
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const icon = document.getElementById('darkIcon');
+            icon.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+        }
+
+        // Parallax Effect on Scroll
+        window.addEventListener('scroll', () => {
+            const scroll = window.pageYOffset;
+            const heroImg = document.getElementById('heroImg');
+            heroImg.style.transform = `translateY(${scroll * 0.5}px) scale(1.1)`;
+        });
+    </script>
+</body>
+</html>

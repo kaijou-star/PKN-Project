@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kearifan Lokal | Proyek PKN Kelompok</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        heritage: '#4F46E5',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; transition: background-color 0.3s; }
+        .font-heritage { font-family: 'Playfair Display', serif; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); }
+        .dark .glass { background: rgba(15, 23, 42, 0.8); border-color: rgba(51, 65, 85, 0.5); }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter text-indigo-600 dark:text-indigo-400">
+                LOKAL<span class="text-orange-500">PRIDE.</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-semibold text-sm uppercase tracking-widest items-center">
+                <a href="#home" class="hover:text-indigo-600 transition">Beranda</a>
+                <a href="#materi" class="hover:text-indigo-600 transition">Materi</a>
+                <a href="#video" class="hover:text-indigo-600 transition">Video</a>
+                <a href="#tim" class="hover:text-indigo-600 transition">Kelompok</a>
+                <button onclick="toggleDarkMode()" class="p-2 bg-slate-200 dark:bg-slate-800 rounded-full hover:scale-110 transition">
+                    <span id="darkIcon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1590059393012-78d10787e35b?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+        <div class="relative z-10 text-center px-6" data-aos="fade-up">
+            <h1 class="font-heritage text-6xl md:text-9xl text-white mb-6">Harmoni Bangsa</h1>
+            <p class="text-slate-300 text-lg md:text-2xl max-w-3xl mx-auto mb-10 leading-relaxed">
+                Mengeksplorasi Kearifan Lokal sebagai Identitas dan Kekuatan Bangsa Indonesia di Era Modern.
+            </p>
+            <a href="#materi" class="inline-block bg-white text-slate-900 px-10 py-4 rounded-full font-bold hover:bg-orange-500 hover:text-white transition-all transform hover:-translate-y-1 shadow-2xl">Pelajari Sekarang</a>
+        </div>
+    </section>
+
+    <section id="materi" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-20" data-aos="fade-up">
+            <span class="text-indigo-600 font-bold uppercase tracking-widest text-sm">Eksplorasi Materi</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold mt-2">Kearifan Lokal Kita</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-32" data-aos="fade-right">
+            <div>
+                <h3 class="text-3xl font-bold mb-6 text-indigo-600">Apa itu Kearifan Lokal?</h3>
+                <p class="text-slate-600 dark:text-slate-400 leading-loose text-lg mb-4">
+                    Kearifan lokal adalah pandangan hidup dan ilmu pengetahuan serta berbagai strategi kehidupan yang berwujud aktivitas yang dilakukan oleh masyarakat lokal dalam menjawab berbagai masalah dalam pemenuhan kebutuhan mereka.
+                </p>
+                <p class="text-slate-600 dark:text-slate-400 leading-loose text-lg">
+                    Di Indonesia, hal ini tercermin dalam cara kita menjaga alam, seperti sistem <strong>Subak</strong> di Bali atau <strong>Sasi</strong> di Maluku.
+                </p>
+            </div>
+            <div class="rounded-[3rem] overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-32" data-aos="fade-left">
+            <div class="order-2 md:order-1 rounded-[3rem] overflow-hidden shadow-2xl -rotate-3 hover:rotate-0 transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1544919982-b61976f0ba43?auto=format&fit=crop&w=800" class="w-full h-full object-cover">
+            </div>
+            <div class="order-1 md:order-2">
+                <h3 class="text-3xl font-bold mb-6 text-orange-500">Fungsi Kearifan Lokal</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <span class="bg-orange-100 text-orange-600 p-1 rounded-full text-sm">✔</span>
+                        <p class="text-slate-600 dark:text-slate-400 italic">Konservasi dan pelestarian sumber daya alam.</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="bg-orange-100 text-orange-600 p-1 rounded-full text-sm">✔</span>
+                        <p class="text-slate-600 dark:text-slate-400 italic">Pengembangan sumber daya manusia melalui upacara adat.</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="bg-orange-100 text-orange-600 p-1 rounded-full text-sm">✔</span>
+                        <p class="text-slate-600 dark:text-slate-400 italic">Sebagai petuah, kepercayaan, sastra, dan pantang larang.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="py-24 bg-slate-100 dark:bg-slate-800/50">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-10" data-aos="fade-up">Tonton Video Pembelajaran</h2>
+            <div class="relative pt-[56.25%] rounded-3xl overflow-hidden shadow-2xl border-8 border-white dark:border-slate-700" data-aos="zoom-in">
+                <iframe class="absolute inset-0 w-full h-full" 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            </div>
+            <p class="mt-8 text-slate-500 italic font-medium">Video penjelasan lengkap tentang implementasi Kearifan Lokal di Indonesia.</p>
+        </div>
+    </section>
+
+    <section id="tim" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold mb-4">Tim Kelompok Kami</h2>
+            <p class="text-slate-500">Anggota dibalik pembuatan proyek ini</p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="group text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative inline-block mb-6">
+                    <div class="absolute inset-0 bg-indigo-500 rounded-full scale-105 opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
+                    <img src="https://i.pravatar.cc/300?img=11" class="w-40 h-40 rounded-full object-cover border-4 border-indigo-500 p-1 transition-transform group-hover:scale-105 shadow-xl">
+                </div>
+                <h3 class="text-xl font-bold">Nama Ketua</h3>
+                <p class="text-indigo-500 font-medium">Ketua & Desainer</p>
+            </div>
+
+            <div class="group text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="relative inline-block mb-6">
+                    <div class="absolute inset-0 bg-orange-500 rounded-full scale-105 opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
+                    <img src="https://i.pravatar.cc/300?img=12" class="w-40 h-40 rounded-full object-cover border-4 border-orange-500 p-1 transition-transform group-hover:scale-105 shadow-xl">
+                </div>
+                <h3 class="text-xl font-bold">Nama Anggota 2</h3>
+                <p class="text-orange-500 font-medium">Pencari Materi</p>
+            </div>
+
+            <div class="group text-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="relative inline-block mb-6">
+                    <div class="absolute inset-0 bg-teal-500 rounded-full scale-105 opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
+                    <img src="https://i.pravatar.cc/300?img=13" class="w-40 h-40 rounded-full object-cover border-4 border-teal-500 p-1 transition-transform group-hover:scale-105 shadow-xl">
+                </div>
+                <h3 class="text-xl font-bold">Nama Anggota 3</h3>
+                <p class="text-teal-500 font-medium">Editor Video</p>
+            </div>
+
+            <div class="group text-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="relative inline-block mb-6">
+                    <div class="absolute inset-0 bg-rose-500 rounded-full scale-105 opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
+                    <img src="https://i.pravatar.cc/300?img=14" class="w-40 h-40 rounded-full object-cover border-4 border-rose-500 p-1 transition-transform group-hover:scale-105 shadow-xl">
+                </div>
+                <h3 class="text-xl font-bold">Nama Anggota 4</h3>
+                <p class="text-rose-500 font-medium">Dokumentasi</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-16 px-6 text-center">
+        <div class="max-w-7xl mx-auto border-t border-slate-800 pt-10">
+            <h2 class="text-xl font-bold mb-4">Terima Kasih Atas Perhatiannya</h2>
+            <p class="text-slate-500 max-w-xl mx-auto">Tugas ini dibuat untuk memenuhi tugas mata pelajaran PKN tentang Kearifan Lokal.</p>
+            <div class="mt-8 flex justify-center gap-6">
+                <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition cursor-pointer">IG</div>
+                <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition cursor-pointer">YT</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Fitur Dark Mode
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const icon = document.getElementById('darkIcon');
+            if (document.documentElement.classList.contains('dark')) {
+                icon.textContent = '☀️';
+            } else {
+                icon.textContent = '🌙';
+            }
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-xl', 'py-2');
+            } else {
+                nav.classList.remove('shadow-xl', 'py-2');
+            }
+        });
+    </script>
+</body>
+</html>
