@@ -32,18 +32,19 @@
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 overflow-x-hidden">
 
     <nav class="fixed w-full z-[100] glass border-b border-slate-200/50 dark:border-slate-800/50 transition-all duration-500">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
             <div class="group cursor-pointer">
-                <div class="text-2xl font-extrabold tracking-tighter text-indigo-600 dark:text-indigo-400 group-hover:scale-105 transition-transform">
+                <div class="text-xl md:text-2xl font-extrabold tracking-tighter text-indigo-600 dark:text-indigo-400 group-hover:scale-105 transition-transform">
                     RPL<span class="text-orange-500">PROJECT.</span>
                 </div>
-                <div class="text-[10px] font-bold tracking-[0.2em] dark:text-slate-500 text-slate-400">KELOMPOK 6 • X RPL 2</div>
+                <div class="text-[8px] md:text-[10px] font-bold tracking-[0.2em] dark:text-slate-500 text-slate-400 uppercase">KELOMPOK 6 • X RPL 2</div>
             </div>
-            <div class="hidden md:flex gap-8 font-bold text-[11px] uppercase tracking-widest items-center">
+            
+            <div class="flex gap-4 md:gap-8 font-bold text-[10px] md:text-[11px] uppercase tracking-widest items-center">
                 <a href="#home" class="hover:text-indigo-600 transition-colors">Home</a>
                 <a href="#materi" class="hover:text-indigo-600 transition-colors">Materi</a>
                 <a href="#tim" class="hover:text-indigo-600 transition-colors">Team</a>
-                <button onclick="toggleDarkMode()" class="ml-4 p-2.5 bg-indigo-50 dark:bg-slate-800 rounded-xl hover:shadow-lg transition-all">
+                <button onclick="toggleDarkMode()" class="p-2 bg-indigo-50 dark:bg-slate-800 rounded-xl hover:shadow-lg transition-all">
                     <span id="darkIcon">🌙</span>
                 </button>
             </div>
@@ -57,9 +58,9 @@
         </div>
         
         <div class="relative z-10 text-center px-6 mt-20" data-aos="fade-up" data-aos-duration="1500">
-            <span class="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white text-xs font-bold tracking-[0.3em] uppercase mb-6 inline-block">Proyek Kewarganegaraan</span>
-            <h1 class="font-heritage text-6xl md:text-[10rem] text-white mb-4 leading-none select-none">Kearifan<br><span class="text-orange-500">Lokal</span></h1>
-            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light tracking-wide">
+            <span class="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase mb-6 inline-block">Proyek Kewarganegaraan</span>
+            <h1 class="font-heritage text-5xl md:text-[10rem] text-white mb-4 leading-tight md:leading-none select-none">Kearifan<br><span class="text-orange-500">Lokal</span></h1>
+            <p class="text-slate-300 text-base md:text-xl max-w-2xl mx-auto mb-10 font-light tracking-wide">
                 Menggali nilai luhur bangsa Indonesia sebagai tameng budaya di era digital.
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-5">
@@ -79,7 +80,7 @@
                     <div class="h-px w-12 bg-indigo-600"></div>
                     <span class="text-indigo-600 font-black tracking-widest text-xs uppercase">01 / Definisi Dasar</span>
                 </div>
-                <h2 class="text-5xl font-extrabold mb-8 dark:text-white">Apa itu Kearifan Lokal?</h2>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-8 dark:text-white">Apa itu Kearifan Lokal?</h2>
                 <div class="space-y-6 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
                     <p>
                         Kearifan lokal (Local Wisdom) adalah suatu bentuk pengetahuan, keyakinan, pemahaman, atau wawasan serta adat kebiasaan atau etika yang menuntun perilaku manusia dalam kehidupan di dalam komunitas ekologis.
@@ -143,7 +144,7 @@
                     </div>
                 </div>
                 <div class="md:w-1/2">
-                    <div class="sticky top-32 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white dark:border-slate-800 aspect-video">
+                    <div class="md:sticky md:top-32 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white dark:border-slate-800 aspect-video">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -225,7 +226,7 @@
                     const members = [
                         { name: "Cakra", role: "Anggota", img: "21", color: "indigo" },
                         { name: "Rhaka", role: "Anggota", img: "22", color: "orange" },
-                        { name: "Sharon(i)", role: "Anggota", img: "23", color: "teal" },
+                        { name: "Sharon", role: "Anggota", img: "23", color: "teal" },
                         { name: "Sefi", role: "Anggota", img: "24", color: "rose" },
                         { name: "Windi", role: "Anggota", img: "25", color: "yellow" },
                         { name: "Hindri", role: "Anggota", img: "26", color: "purple" }
@@ -236,7 +237,7 @@
                             <div class="group text-center" data-aos="fade-up" data-aos-delay="${i*100}">
                                 <div class="relative inline-block mb-8">
                                     <div class="absolute -inset-4 bg-${m.color}-600/30 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                                    <img src="https://i.pravatar.cc/300?img=${m.img}" class="relative w-32 h-32 md:w-44 md:h-44 rounded-full object-cover border-4 border-${m.color}-500 p-1.5 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 grayscale hover:grayscale-0 shadow-2xl shadow-black">
+                                    <img src="${m.img}" class="relative w-32 h-32 md:w-44 md:h-44 rounded-full object-cover border-4 border-${m.color}-500 p-1.5 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 grayscale hover:grayscale-0 shadow-2xl shadow-black">
                                 </div>
                                 <h3 class="text-2xl font-black text-white mb-2">${m.name}</h3>
                                 <p class="text-indigo-400 font-bold text-[10px] uppercase tracking-[0.2em]">${m.role}</p>
@@ -253,7 +254,7 @@
             <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-indigo-600 transition-all cursor-pointer">IG</div>
             <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-indigo-600 transition-all cursor-pointer">YT</div>
         </div>
-        <p class="text-slate-500 text-xs mb-4 uppercase tracking-[0.4em]">Project Akhir PKN • 2026</p>
+        <p class="text-slate-500 text-xs mb-4 uppercase tracking-[0.4em]">Project PKN • 2026</p>
         <div class="text-[10px] font-bold text-slate-700">HANDCRAFTED WITH ❤️ BY KELOMPOK 6 X RPL 2</div>
     </footer>
 
@@ -261,18 +262,28 @@
         // Init Animate On Scroll
         AOS.init({ duration: 1000, once: true });
 
-        // Dark Mode Function
+        // Dark Mode Function (Optimized for persistence)
         function toggleDarkMode() {
             document.documentElement.classList.toggle('dark');
             const icon = document.getElementById('darkIcon');
-            icon.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+            const isDark = document.documentElement.classList.contains('dark');
+            icon.textContent = isDark ? '☀️' : '🌙';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        // Cek preferensi tema saat load
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.getElementById('darkIcon').textContent = '☀️';
         }
 
         // Parallax Effect on Scroll
         window.addEventListener('scroll', () => {
             const scroll = window.pageYOffset;
             const heroImg = document.getElementById('heroImg');
-            heroImg.style.transform = `translateY(${scroll * 0.5}px) scale(1.1)`;
+            if(heroImg) {
+                heroImg.style.transform = `translateY(${scroll * 0.5}px) scale(1.1)`;
+            }
         });
     </script>
 </body>
